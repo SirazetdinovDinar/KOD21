@@ -135,7 +135,7 @@ MonoBehaviour:
     m_Value: 35.4
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.56981134, g: 0.65540797, b: 1, a: 1}
+    m_Value: {r: 0.7311321, g: 0.7849057, b: 1, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 0
@@ -157,10 +157,10 @@ MonoBehaviour:
   active: 1
   fogDensity:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 9.48
   fogDistance:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 2.9
   fogColor:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 0}
