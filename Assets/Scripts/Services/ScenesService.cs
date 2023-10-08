@@ -5,7 +5,7 @@ namespace Game.Services
 {
     public class ScenesService
     {
-        public async Task LoadScene(string sceneName, LoadSceneMode mode, bool forceReload = false)
+        public static async Task LoadScene(string sceneName, LoadSceneMode mode, bool forceReload = false)
         {
             if (!forceReload && IsLoaded(sceneName))
             {
@@ -19,7 +19,7 @@ namespace Game.Services
             }
         }
 
-        public async Task UnloadScene(string sceneName)
+        public static async Task UnloadScene(string sceneName)
         {
             var asyncOperation = SceneManager.UnloadSceneAsync(sceneName);
             while (asyncOperation != null && !asyncOperation.isDone)
@@ -28,7 +28,7 @@ namespace Game.Services
             }
         }
 
-        public bool IsLoaded(string sceneName)
+        public static bool IsLoaded(string sceneName)
         {
             for (int i = 0; i < SceneManager.sceneCount; ++i)
             {
